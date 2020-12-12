@@ -10,6 +10,15 @@
 
         </div>
       </ion-col>
+      <ion-col>
+        <ion-button expand  = "block" (click) = "createGroup()"> Create Group </ion-button>
+        <div *ngIf  =  "groupBool">
+          <app-create-group>
+
+          </app-create-group>
+            
+        </div>
+      </ion-col>
 
     </ion-row>
     <ion-col>

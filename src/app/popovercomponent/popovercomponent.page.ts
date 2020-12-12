@@ -27,6 +27,11 @@ export class PopovercomponentPage implements OnInit {
   signout() {
    console.warn('signout');
   }
+  public groupBool = false;
+  createGroup(){
+     if(this.groupBool) this.groupBool = false;
+     else this.groupBool = true;
+  }
 
 
 }

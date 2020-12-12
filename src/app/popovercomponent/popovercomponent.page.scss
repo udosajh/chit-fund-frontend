@@ -1,0 +1,16 @@
+// $popover-md-width: 1320px; $popover-ios-width: 1320px; $popover-wp-width: 1320px
+ion-content{
+    height: 500px;
+    width: 500px;
+    ion-backdrop{
+    opacity: 0.5 !important;
+    }
+    .popover-wrapper{
+    .popover-content{
+    width:80vw;
+    max-width:500px;
+    }
+    }
+    }
+    
+    

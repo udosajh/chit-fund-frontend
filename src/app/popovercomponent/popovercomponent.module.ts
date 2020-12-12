@@ -9,6 +9,7 @@ import { PopovercomponentPageRoutingModule } from './popovercomponent-routing.mo
 import { PopovercomponentPage } from './popovercomponent.page';
 import { SettingsComponent } from '../components/settings/settings.component';
 import { SignoutComponent } from '../components/signout/signout.component';
+import { CreateGroupComponent } from '../create-group/create-group.component';
 
 @NgModule({
   imports: [
@@ -17,6 +18,6 @@ import { SignoutComponent } from '../components/signout/signout.component';
     IonicModule,
     PopovercomponentPageRoutingModule
   ],
-  declarations: [PopovercomponentPage, SettingsComponent, SignoutComponent]
+  declarations: [PopovercomponentPage, SettingsComponent, SignoutComponent, CreateGroupComponent]
 })
 export class PopovercomponentPageModule {}

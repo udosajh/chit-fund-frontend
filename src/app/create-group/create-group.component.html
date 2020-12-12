@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Add Group Participants
+    </ion-title>
+  </ion-toolbar>
+  <ion-toolbar color = "dark">
+    <ion-searchbar  (ionInput) = "FilterJSONData($event) "></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class = 'ion-padding'>
+    <ion-list>
+      <ion-item (click) = "selectVal(item.name)" *ngFor = "let item of jsonData">
+       {{item}}
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>
+<ion-item class = "ion-margin-bottom">
+  <ion-input type = " text" placeholder = " enter name"></ion-input>
+</ion-item>

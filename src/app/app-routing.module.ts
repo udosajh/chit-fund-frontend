@@ -12,6 +12,7 @@ const routes: Routes = [
     path: 'popovercomponent',
     loadChildren: () => import('./popovercomponent/popovercomponent.module').then( m => m.PopovercomponentPageModule)
   }
+  
 ];
 
 @NgModule({

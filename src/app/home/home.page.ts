@@ -24,7 +24,7 @@ export class HomePage implements OnInit {
 
   constructor(public popoverController: PopoverController) {}
   createPopOver() {
-    this.popoverController.create({component: PopovercomponentPage, showBackdrop: false}).then((popoverElement) => {
+   let popover = this.popoverController.create({component: PopovercomponentPage, showBackdrop: false}).then((popoverElement) => {
       popoverElement.present();
     })
   }
