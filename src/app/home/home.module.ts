@@ -6,6 +6,7 @@ import { RouterModule } from "@angular/router";
 
 import { HomePage } from "./home.page";
 import { ComponentsModule } from "../components/components.module";
+import { DotsMenuComponent } from '../components/dots-menu/dots-menu.component';
 
 @NgModule({
   imports: [
@@ -20,6 +21,6 @@ import { ComponentsModule } from "../components/components.module";
       }
     ])
   ],
-  declarations: [HomePage]
+  declarations: [HomePage, DotsMenuComponent]
 })
 export class HomePageModule {}

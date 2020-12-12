@@ -1,5 +1,7 @@
 import { Component, OnInit, ViewChild } from "@angular/core";
-import { IonSegment, IonSlides } from "@ionic/angular";
+import { IonSegment, IonSlides, PopoverController } from "@ionic/angular";
+import { PopovercomponentPage } from '../popovercomponent/popovercomponent.page';
+
 
 @Component({
   selector: "app-home",
@@ -13,8 +15,29 @@ export class HomePage implements OnInit {
     initialSlide: 1,
     speed: 100
   };
+  public shouldOpen = false;
+  openChildComponent(){
+//      if(this.shouldOpen ) this.shouldOpen= false;
+//      else this.shouldOpen = true;
+// console.warn(this.shouldOpen);
+  }
 
-  constructor() {}
+  constructor(public popoverController: PopoverController) {}
+  createPopOver() {
+    this.popoverController.create({component: PopovercomponentPage, showBackdrop: false}).then((popoverElement) => {
+      popoverElement.present();
+    })
+  }
+  // async presentPopover(ev: any) {
+  //   const popover = await this.popoverController.create({
+  //     component: PopoverComponentComponent,
+  //     cssClass: 'my-custom-class',
+  //     event: ev,
+  //     translucent: true
+  //   });
+  //   console.warn('pop open');
+  //   return await popover.present();
+  // }
 
   ngOnInit() {}
 

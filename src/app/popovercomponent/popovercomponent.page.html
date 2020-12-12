@@ -1,0 +1,30 @@
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button expand  = "block" (click) = "settingsComponent()"> settings </ion-button>
+        <div *ngIf = "shouldOpen">
+          <app-settings>
+
+          </app-settings>
+
+        </div>
+      </ion-col>
+
+    </ion-row>
+    <ion-col>
+      <ion-button expand  = "block" (click) = "signout()">
+       Signout
+      </ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button expand  = "block" (click) = "closePopOver()">
+       Close
+      </ion-button>
+    </ion-col>
+    <ion-row>
+      
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
