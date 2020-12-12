@@ -13,18 +13,10 @@
     </ion-buttons>
   </ion-toolbar>
   <ion-toolbar color="primary">
-    <ion-segment #segment value="ion-sb-1" mode="md" (ionChange)="segmentChanged($event)">
-      <ion-segment-button>
-        <ion-label>Chit Funds Group</ion-label>
-      </ion-segment-button>
-    </ion-segment>
+      <ion-label style="margin-left: 20px;">Chit Funds Groups</ion-label>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-slides #slider pager="false" (ionSlideWillChange)="slideChanged()" [options]="slideOpts">
-    <ion-slide>
-      <app-chats></app-chats>
-    </ion-slide>
-  </ion-slides>
+  <app-chats></app-chats>
 </ion-content>
